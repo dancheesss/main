@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+
+
+
+    <div class="form">
+        <h1 class="log">Login</h1>
+        <input type="text" class="name" placeholder="Name" maxlength="49" oninput="allowLettersOnly(event)">
+        <input type="email" placeholder="Email" class="email">
+        <input type="password" placeholder="Password" class="password">
+        <input type="text" class="phone" maxlength="13" placeholder="Phone number" oninput="allowNumbersOnly(event)">
+        <input type="checkbox" class="checkbox">
+
+        <p class="user">Введіть ваше ім'я</p>
+        <p class="emailError">Введіть ваш email</p>
+        <p class="passwordError">Введіть ваш пароль</p>
+        <p class="phoneError">Введіть ваш номер телефону</p>
+        <p class="checkError">Прийміть правила<br> політики конфіденційності</p>
+
+        <button class="form__button">confirm</button>
+    </div>
+    
+</head>
+<body>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="./secStyle.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="link">←Main</a>
+    <p class="text">Nonobank</p>
+    <div class="header__about">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto similique, exercitationem eos ad dolore quos.</p>
+    </div>
+    <a></a>
+  </header>
+
+  <div class="bg">
+  </div>
+  
+<div class="form">
+  
+    <div class="data">
+        <div class="back"><button class="change__theme"></button></div>   
+        <p class="info" id="name">Введіть свої ім'я та фамілію</p>
+        <input type="text" class="input__username" placeholder="Ім'я" class="inputLetters" oninput="allowLettersOnly(event)">
+        <input type="text" class="input__surname" placeholder="Фамілія" class="inputLetters" oninput="allowLettersOnly(event)">
+        <button class="gen__number">Згенерувати рандомний номер картки</button>
+        <button class="gen__cv">Зенерувати рандомний CVV код</button>
+        <div class="date">
+            <label label class="date__about">Дата придатності</label>
+            <input class="input__date" type="date">
+        </div>
+        <div class="check">
+          <input type="checkbox" class="check__input" id="check">
+          <label class="check__politic" for="check">Користуючись цим веб-сайтом, ви підтверджуєте, що ознайомилися з нашою <span class="text__about">Політикою конфіденційності</span> та погоджуєтеся з умовами обробки вашої особистої інформації, як описано у цьому документі. Якщо ви не погоджуєтеся з цією Політикою конфіденційності, будь ласка, не продовжуйте використовувати цей веб-сайт.</label>
+          <div class="check__modal">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolorum adipisci dolorem? Ipsam totam aliquam laboriosam similique fugiat consectetur, cum dignissimos, id alias nesciunt sed temporibus repudiandae inventore corporis. Enim.</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="block" oncontextmenu="return false">
+      <div class="line"></div>
+        <div class="block__content">
+            <div class="block__title">
+                <p class="block__text">NonoBank</p>
+                <p class="text__block">Debute card</p>
+            </div>
+
+            <img class="block__thing" src="./card.png">
+            <p class="card__number"></p>
+
+            <div class="card__contain">
+                <p class="card__cv"></p>
+                <p class="card__date"></p>
+            </div>
+
+            <div class="name">
+                <span class="card__username"></span>
+                <span class="card__surname"></span>
+            </div>
+        </div>
+        
+      <!-- <button class="darkButton" onclick="changeBgWhite()"></button> -->
+
+    </div>
+</div>
+
+
+  <script src="./secScript.js"></script>
+</body>
+</html>

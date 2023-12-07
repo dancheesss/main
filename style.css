@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+
+
+
+.name, .email, .password, .phone {
+    width: 15vw;
+}
+
+.email.green {
+    box-shadow: 0 0 10px green;
+    transition: 1s;
+}
+.email {
+    transition: 1s;
+}
+.email.red {
+    box-shadow: 0 0 10px rgb(255, 0, 0);
+    transition: 1s;
+}
+.form {
+    display: flex;
+    margin: auto;
+    width: 20vw;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    background: linear-gradient(#00dccd, #67bdff);
+    margin-top: 100px;
+    height: 330px;
+}
+.log {
+    align-self: center;
+    font-family: system-ui;
+    font-size: 45px;
+}
+
+.password.green {
+    box-shadow: 0 0 10px green;
+    transition: 1s;
+}
+.password {
+    transition: 1s;
+}
+.password.red {
+    box-shadow: 0 0 10px rgb(255, 0, 0);
+    transition: 1s;
+}
+
+.form__button {
+    background: linear-gradient(90deg, #2fffbd, #a3d6ff);
+    border: 2px solid #006368;
+    border-radius: 5px;
+    width: 10vw;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.checkbox, .password, .email, .phone, .name {
+    border-radius: 10px;
+    background-color: #8ffff0;
+    border: 2px solid #00718b;
+    margin: 2px;
+    height: 20px;
+    font-size: 20px;
+    transition: 1s;
+}
+
+.phone.green {
+    box-shadow: 0 0 10px green;
+    transition: 1s;
+}
+
+.phone.red {
+    box-shadow: 0 0 10px rgb(255, 0, 0);
+    transition: 1s;
+}
+
+.user, .emailError, .passwordError, .phoneError, .checkError {
+    opacity: 0;
+    position: absolute;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    font-size: 15px;
+    font-family: monospace;
+    user-select: none;
+    bottom: 200px;
+    transition: 0.3s;
+    z-index: -1;
+    text-align: center;
+}
+
+.user.error, .emailError.active, .passwordError.active, .phoneError.active, .checkError.active {
+    bottom: 170px;
+    opacity: 1;
+    z-index: 1;
+}
+
+.checkError.active {
+    bottom: 158px;
+}
